@@ -1,0 +1,75 @@
+/* FONTS
+font-family: 'Play', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Amiri', serif;
+*/
+
+body {
+    background-color: rgb(10, 167, 156);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+.nav-wrapper {
+    background-color: rgb(5, 68, 119);
+    height: 100%;
+    width: 100%;
+}
+
+i {
+    padding: 1em;
+}
+
+.title {
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 12em;
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.containerCollage,
+.containerCollection {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+tr {
+    max-height: 30vh;
+}
+
+td {
+    max-width: 30vw;
+}
+
+img {
+    padding: 0;
+}
+
+img.collection {
+    border: 0;
+    cursor: move;
+    max-height: 30vh;
+    max-width: 20vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-footer {
+    background-color: rgb(5, 68, 119);
+    font-family: 'Amiri', serif;
+}

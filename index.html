@@ -5,23 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Dancing+Script|Play|Satisfy" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
     <title>Challenge Drag and Drop</title>
 </head>
 
 <body>
+    <!--HEADER Nombre de la aplicación-->
     <header>
-        <h1>Insta Collage</h1>
+        <nav class="row nav-wrapper">
+            <div class="col s1 m4 l1">
+                <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="col s6 m8 l8">
+                <a href="#!" class="brand-logo title">Insta Collage</a>
+            </div>
+        </nav>
     </header>
-
-
-
-
-
-
-    <script src="main.js"></script>
+    <!--MAIN Tablas para imagenes imagenes-->
+    <main>
+        <!--Tablas que recibe las imagenes-->
+        <table class="centered containerCollage">
+            <tbody>
+                <tr class="row topRow">
+                    <td class="col s6 m6 l6 responsive-img"></td>
+                    <td class="col s6 m6 l6 responsive-img"></td>
+                </tr>
+                <tr class="row buttomRow">
+                    <td class="col s4 m4 l4 responsive-img"></td>
+                    <td class="col s4 m4 l4 responsive-img"></td>
+                    <td class="col s4 m4 l4 responsive-img"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="divider "></div>
+        <!--Tablas que contienen las imagenes-->
+        <table>
+            <tbody class="centered containerCollection">
+                <tr class="col s3 m3 l3 offset-1">
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/nomi2.jpg"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/sense-8-logo.jpg"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/proud.jpg"></td>
+                </tr>
+                <tr class="col s3 m3 l3 offset-1">
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/restaurant.jpg"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/allsense8.jpg"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/sense8cartel.jpg"></td>
+                </tr>
+                <tr class="col s3 m3 l3 offset-1">
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/sense8-2.png"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/Sense8-cast.jpg"></td>
+                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/Sense8_Finale.jpg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <!--FOOTER-->
+    <footer class="page-footer">
+        <div class=" row footer-copyright">
+            <div class="col s11 m7 l8 container ">
+                © 2018 Copyright Alex Durán
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+    <script src="js/app.js "></script>
 </body>
 
 </html>
