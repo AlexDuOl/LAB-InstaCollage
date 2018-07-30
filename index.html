@@ -19,33 +19,29 @@
             <div class="col s1 m4 l1">
                 <i class="fas fa-camera-retro"></i>
             </div>
-            <div class="col s6 m8 l8">
+            <div class="col s10 m8 l8 offset-s3">
                 <a href="#!" class="brand-logo title">Insta Collage</a>
             </div>
         </nav>
     </header>
-    <!--MAIN Tablas para imagenes imagenes-->
+    <!--MAIN-->
     <main>
-        <!--Tablas que recibe las imagenes-->
-        <table class="centered containerCollage">
-            <tbody>
-                <tr class="row topRow">
-                    <td class="col s6 m6 l6 responsive-img"></td>
-                    <td class="col s6 m6 l6 responsive-img"></td>
-                </tr>
-                <tr class="row buttomRow">
-                    <td class="col s4 m4 l4 responsive-img"></td>
-                    <td class="col s4 m4 l4 responsive-img"></td>
-                    <td class="col s4 m4 l4 responsive-img"></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="divider "></div>
-        <!--Tablas que contienen las imagenes-->
+        <!--Contenedro de collage-->
+        <div class="row topRow centered containerCollage">
+            <div class="col s8 m8 l8 centered">
+                <div class="row collageImg indigo"></div>
+                <div class="row collageImg red"></div>
+            </div>
+            <div class="col s4 m4 l4 centered containerCollage">
+                <div class="row contered collageImg green"></div>
+                <div class="row contered collageImg blue"></div>
+            </div>
+        </div>
+        <!--Tabla que contienen las imagenes para mover-->
         <table>
             <tbody class="centered containerCollection">
                 <tr class="col s3 m3 l3 offset-1">
-                    <td><img class="responsive-img collection" draggable="true" src="css/assets/images/nomi2.jpg"></td>
+                    <td><img class="responsive-img collection x" draggable="true" src="css/assets/images/nomi2.jpg"></td>
                     <td><img class="responsive-img collection" draggable="true" src="css/assets/images/sense-8-logo.jpg"></td>
                     <td><img class="responsive-img collection" draggable="true" src="css/assets/images/proud.jpg"></td>
                 </tr>
@@ -71,7 +67,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
-    <script src="js/app.js "></script>
+    <script src="js/DragDropTouch.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
