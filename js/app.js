@@ -4,7 +4,7 @@ let dragged = null;
 
 //Entrando al array de imagenes
 Array.from(dragImg).forEach((img) => {
-    img.ondragstart = function (e) {
+    img.ondragstart = function(e) {
         dragged = e.target;
         console.log("Esta drageando");
     }
@@ -12,11 +12,11 @@ Array.from(dragImg).forEach((img) => {
 
 //Entrando al array del div para colocar las imagenes
 Array.from(dropBox).forEach((box) => {
-    box.ondragover = function (e) {
+    box.ondragover = function(e) {
         e.preventDefault();
-        console.log("drag");       
+        console.log("drag");
     }
-    box.ondrop = function (e) {
+    box.ondrop = function(e) {
         e.preventDefault();
         box.appendChild(dragged);
         console.log(dragged);
@@ -24,5 +24,4 @@ Array.from(dropBox).forEach((box) => {
 
 });
 
-//.setAttribute("x", e);
-
+//
